@@ -335,10 +335,16 @@
 
   // If you are using a pre-configured hotend then you can use one of the value sets by uncommenting it
 
+  #define  DEFAULT_Kp 18.45
+  #define  DEFAULT_Ki 1.09
+  #define  DEFAULT_Kd 78.23
+
+
   // Ultimaker
-  #define  DEFAULT_Kp 22.2
-  #define  DEFAULT_Ki 1.08
-  #define  DEFAULT_Kd 114
+  // RepRapGuru Original Settings
+//  #define  DEFAULT_Kp 22.2
+// #define  DEFAULT_Ki 1.08
+//  #define  DEFAULT_Kd 114
 
   // MakerGear
   //#define  DEFAULT_Kp 7.0
@@ -509,7 +515,7 @@
  * Override with M92
  *                                      X, Y, Z, E0 [, E1[, E2[, E3[, E4]]]]
  */
-#define DEFAULT_AXIS_STEPS_PER_UNIT   { 80, 80, 4000, 90 }
+#define DEFAULT_AXIS_STEPS_PER_UNIT   { 80, 80, 4000, 98 }
 
 /**
  * Default Max Feed Rate (mm/s)
@@ -973,7 +979,8 @@
 #endif
 
 // Homing speeds (mm/m)
-#define HOMING_FEEDRATE_XY (50*60)
+//#define HOMING_FEEDRATE_XY (50*60)
+#define HOMING_FEEDRATE_XY (20*60)
 #define HOMING_FEEDRATE_Z  (4*60)
 
 //=============================================================================
